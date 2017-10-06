@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us" style="">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="icon" href="/assets/images/Logo_Blank_Trans_500.png">
+    <title>Dope Shows</title>
+    <link rel="stylesheet" href="/assets/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Junction|Spinnaker" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container indigo-text darken-4">
+        <a id="logo-container" href="/" class="brand-logo"><i class="material-icons">all_inclusive</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/members">Members</a></li>
+          <li><a href="/recent">Recent</a></li>
+          <li><a href="/">Home</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="/members">Members</a></li>
+          <li><a href="/recent">Recent</a></li>
+          <li><a href="/">Home</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+
+<!-- WAAAIT a second - in order to populate the show's patreon, links, etc this should be included on the individual show pages  -->
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m9 l10">
+    {{{ body }}}
+          </div>
+          <div class="col hide-on-small-only m3 l2">
+            <div class="pin-top" style="top: 0px;"><!-- toggles to pinned on scroll height -->
+              <a id="logo-container" href="/" class="brand-logo"><i class="material-icons">all_inclusive</i></a>
+              <ul id="showsMenu">
+                <li class="menuItem">The Unbelievable Podcast</li>
+                <li class="menuItem">The Unbelievable Podcast</li>
+                <li class="menuItem">The Unbelievable Podcast</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer  indigo darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l4 s12">
+            <h5 class="white-text left-align">Dope Shows</h5>
+            <h6 class="left-align grey-text text-lighten-4">Copyright <i class="material-icons md-18">copyright</i> 2017</h6>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright  indigo darken-4">
+        <div class="container">
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="init.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

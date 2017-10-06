@@ -48,4 +48,4 @@ exports.contentSearch = function() {
 
 };
 
-export { contentSearch };
+//export { contentSearch };
