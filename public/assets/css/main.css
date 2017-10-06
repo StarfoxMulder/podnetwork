@@ -1,0 +1,334 @@
+html {
+}
+
+body {
+
+}
+
+main {
+  padding-top: 3%;
+}
+#brandTitle {
+  font-family: 'Spinnaker', sans-serif;;
+  color: #21244C;
+  letter-spacing: 7px;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 28px;
+  width: auto;
+}
+nav {
+  font-family: 'Spinnaker', sans-serif;
+  z-index: 2;
+}
+#logo-container {
+  z-index: 4;
+}
+#navLogoImg {
+  height: 3em;
+  margin-top: 8%;
+  z-index: 5;
+}
+nav a {
+  vertical-align: middle !important;
+  color: #ef6c00 !important;
+  /*value of orange darken 3*/
+}
+.hide-on-med-and-down {
+  font-size: 22px !important;
+  vertical-align: middle !important;
+}
+
+p {
+  line-height: 2rem;
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+}
+a {
+  line-height: 2rem;
+  font-family: 'Spinnaker', sans-serif;
+  font-size: 18px;
+}
+h1 {
+  font-family: 'Spinnaker', sans-serif;
+  font-weight: 900;
+}
+h4, h5{
+  font-family: 'Spinnaker', sans-serif !important;
+}
+h6 {
+  font-family: 'Spinnaker', sans-serif !important;
+  font-size: 20px;
+  line-height: 2rem;
+}
+label {
+  font-family: 'Spinnaker', sans-serif;
+  font-size: 18px;
+}
+
+.parallax-container {
+  min-height: 400px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+footer .md-18 {
+  font-size: 16px;
+}
+footer p {
+  text-align: right;
+  line-height: 2rem;
+  font-family: 'Spinnaker', sans-serif;
+  font-size: 18px;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.footer-copyright {
+  height: 5px !important;
+  max-height: 5px !important;
+  min-height: 5px !important;
+}
+.footer-copyright .container {
+  height: 5px !important;
+}
+footer .row {
+  margin-bottom: 0%;
+}
+
+.socialIcon {
+  max-height: 22px;
+}
+/*///// Registration Page /////*/
+#registration {
+
+}
+
+
+
+/*///// Error Page //////*/
+#error {
+
+}
+
+/*////// Home Page //////*/
+#home {
+
+}
+#donate-button {
+ /* margin-bottom: 2em;*/
+}
+#register-button {
+  margin-top: 1em;
+}
+
+
+/*///// News Page //////*/
+#newsPage {
+  background-image: url("../images/proIntro35o.jpg");
+  min-height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-stacked {
+  color: #3e2723;
+}
+.newsSnip {
+  font-size: 18px;
+  padding: 0% 5%;
+  margin-top: 4%;
+  font-weight: 500;
+}
+.s12 h1 {
+  text-align: center;
+  color: #6d4c41;
+}
+.featuredText {
+  font-family: 'Spinnaker', sans-serif;
+  color: #424242;
+  font-weight: 500;
+}
+
+
+.bot-left {
+  position: relative;
+}
+.bot-left:before, .bot-left:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: -3px;
+
+}
+.bot-left:before {
+  top: -3px;
+  width: 3px;
+  background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#ef6c00), to(transparent));
+  background-image: -webkit-linear-gradient(transparent, #ef6c00);
+  background-image: -moz-linear-gradient(transparent, #ef6c00);
+  background-image: -o-linear-gradient(transparent, #ef6c00);
+}
+.bot-left:after {
+  right: -3px;
+  height: 3px;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#ef6c00), to(transparent));
+  background-image: -webkit-linear-gradient(left, #ef6c00, transparent);
+  background-image: -moz-linear-gradient(left, #ef6c00, transparent);
+  background-image: -o-linear-gradient(left, #ef6c00, transparent);
+}
+
+#featuredMedia {
+  border: 3px solid #ef6c00;
+  max-height: 480px;
+  max-width: 853px;
+  overflow-y: hidden;
+}
+
+#newsPage {
+}
+
+
+/*////// Donate Page //////*/
+#donateBkg {
+
+}
+
+#donate-amazon {
+  margin-bottom: 7%;
+}
+
+
+/*////// Events Page //////*/
+.events {
+  min-height: 450px;
+}
+.events .center {
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+#eventsCopy{
+  line-height: 2em;
+}
+.buffer {
+  margin-left: 3%;
+  /*margin-right: 3%;*/
+}
+.buttons {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+/*////// Register Page ///////*/
+#login {
+
+}
+#helperText{
+  text-align: center;
+}
+
+
+/*/////// Family Page ///////*/
+#familyPage {
+  background-color: #fff6ef;
+  background-size: cover;
+  width: 100%;
+}
+.familyMember {
+  margin-top: -7%;
+}
+.familyCard {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  color: rgba(0,0,0,0.87);
+  line-height: 15px;
+  font-family: 'Spinnaker', sans-serif;
+  border-radius: 2px;
+}
+
+.portraitImg {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+#tricia {
+  margin-top: 5%;
+}
+#tricia:hover {
+  background-image: url("/assets/images/cjActive.gif");
+  background-size: 25%;
+  background-repeat: repeat-x;
+}
+#charlie:hover {
+  background-image: url("/assets/images/cjActive.gif");
+  background-size: 25%;
+  background-repeat: repeat-x;
+}
+#cj:hover {
+  background-image: url("/assets/images/cjActive.gif");
+  background-size: 25%;
+  background-repeat: repeat-x;
+}
+#brie:hover {
+  background-image: url("/assets/images/cjActive.gif");
+  background-size: 25%;
+  background-repeat: repeat-x;
+}
+
+/*///// Media Queries /////*/
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: static;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+  #navLogoImg {
+    height: 3em;
+    margin-top: 13%;
+  }
+  #llFooter {
+    margin-top: 5%;
+  }
+  .evTopBtn {
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+  .parallax-container {
+    min-height: 470px;
+  }
+  #navLogoImg {
+    height: 3em;
+    margin-top: 3%;
+  }
+  .card-image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 528px) {
+  #phoneBtn {
+   margin-top: 3%;
+  }
+}

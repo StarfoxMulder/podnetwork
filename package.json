@@ -1,0 +1,38 @@
+{
+  "name": "unbelievable.podcast.network",
+  "version": "0.1.0",
+  "description": "Podcast network of comedic strangeness",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StarfoxMulder/podnetwork.git"
+  },
+  "keywords": [
+    "podcast",
+    "network"
+  ],
+  "author": "Charles Jude Prestia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StarfoxMulder/podnetwork/issues"
+  },
+  "homepage": "https://github.com/StarfoxMulder/podnetwork#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "cheerio": "^0.22.0",
+    "express": "^4.16.1",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.0",
+    "method-override": "^2.3.10",
+    "mongoose": "^4.12.0",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7",
+    "request": "^2.83.0",
+    "serve-favicon": "^2.4.5",
+    "vue": "^2.4.4"
+  }
+}

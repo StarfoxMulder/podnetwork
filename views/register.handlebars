@@ -1,0 +1,24 @@
+{{!-- turning this into a Vue html template --}}
+
+<main>
+  <div class="container" id="registration">
+    <div class="row">
+
+      <div class="col-xs-4 col-xs-offset-4">
+        <h4>New User Registration</h4>
+        <form id="registerForm" method="post" action="/register">
+          <div class="form-group">
+            <label for="userName">User Name</label>
+            <input id="userName" type="text" class="form-control" placeholder="Rhyolite38"></input>
+            <label for="email">Email</label>
+            <input id="email" class="form-control" type="email" placeholder="Ex: PSchneider@DUMB.secret.gov"></input>
+            <label for="password">Password</label>
+            <input id="password" class="form-control" type="password" placeholder="b1gF00t$t0mp"></input>
+          </div>
+          <button id="submitNewUser" class="btn btn-info col-xs-offset-5" type="submit">Submit</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</main>

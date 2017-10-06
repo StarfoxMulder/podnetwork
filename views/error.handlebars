@@ -1,0 +1,28 @@
+
+<main>
+  <div class="container" id="error">
+    <div class="row">
+
+      <div class="col-xs-4 col-xs-offset-4">
+        <h4>User Login</h4>
+        <h5 style="color:red;">There was an error with your submission.  Please try again</h5>
+        <form id="loginForm" method="POST" action="/login">
+          <div class="form-group">
+            <label for="userName">User Name</label>
+            <input id="userName" class="form-control" type="username" placeholder="Rhyolite38"></input>
+            <label for="email">Email</label>
+            <input id="email" class="form-control" type="email" placeholder="Ex: PSchneider@DUMB.secret.gov"></input>
+            <label for="password">Password</label>
+            <input id="password" class="form-control" type="password" placeholder="b1gF00t$t0mp"></input>
+          </div>
+          <button id="submitLogin" class="btn btn-info col-xs-offset-5" type="submit">Submit</button>
+        </form>
+        <div>
+          <p>or click here to sign up as a new user!</p>
+          <button id="newUserRedirect" class="btn btn-info col-xs-offset-5" type="button" href="/register">Register</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
