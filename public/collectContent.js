@@ -1,9 +1,10 @@
 var exports = module.exports = {};
 
 exports.contentSearch = function() {
+  var tup = "The Unbelievable Podcast";
 
 ////// Unbelievable Podcast
-  request("http://www.unbelievablepodcast.com/", function(error, response, html) {
+  request("https://www.spreaker.com/user/unbelievable", function(error, response, html) {
 
     var $ = cheerio.load(html);
 
@@ -15,7 +16,7 @@ exports.contentSearch = function() {
       result.link = $(this).children("a").attr("href");
       result.image = $(this).children("a").children("div").children("img").attr("src");
       result.snip = $(this).children("a").attr("title")
-      result.source = uncl;
+      result.source = tup;
       result.scrapeDate = Date.now();
 
       var entry = new Article(result);
