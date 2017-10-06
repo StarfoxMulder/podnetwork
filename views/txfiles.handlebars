@@ -1,0 +1,53 @@
+<div class="parallax-container" id="tupPage">
+
+<div class="container">
+  <div class="section">
+
+    <div class="row">
+      <div class="col s12">
+        <h1>The Unbelievable Podcast</h1>
+      </div>
+    </div>
+
+    <div class="row">
+    </div>
+
+    <div id="articleBanner" class="container">
+      <div class="section no-pad-bot">
+        <br><br>
+        <div class="row center">
+          {{#each found}}
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="{{this.image}}">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <h5>{{this.title}}</h5>
+                <h6>{{this.source}}</h6>
+                <div class="divider"></div>
+                <p class="newsSnip">{{this.snip}}</p>
+              </div>
+              <div class="card-action">
+                <a href="{{this.link}}">Full Article Here</a>
+              </div>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+</div>
+
+<!-- TX Files -->
+ <!-- Patreon https://www.patreon.com/txfiles -->
+ <!-- Twitter https://twitter.com/tx_files?lang=en -->
+ <!-- iTunes https://itunes.apple.com/us/podcast/the-tx-files/id1153817822?mt=2 -->
+<!-- Secret Trans Pod -->
+ <!-- iTunes https://itunes.apple.com/us/podcast/secret-transmission-podcast/id1090705905?mt=2 -->
