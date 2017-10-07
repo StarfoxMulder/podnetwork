@@ -17,14 +17,14 @@ var search = require("../public/collectContent.js");
 // changed articleSearch to showSearch
 router.get("/", function(req,res) {
   search.contentSearch();
-  res.render("index");
+  res.render("index", {layout: 'main.handlebars'});
 });
 
 router.get("/members", function(req,res) {
-  Show.find().sort({"scrapeDate":-1}).exec( function(err, found){
+  Show.find().sort({"order":1}).exec( function(err, found){
     if(err) {
     } else {
-      res.render("news",{found:found});
+      res.render("members",{found:found});
     }
   });
 });

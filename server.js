@@ -30,7 +30,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 //Setting up handlebars
 app.engine('handlebars', exphbs({
-  defaultLayout: 'main'
+  defaultLayout: 'show'
 }));
 app.set('view engine', 'handlebars');
 
@@ -61,11 +61,11 @@ app.listen(PORT, function () {
 
 var routes = require('./routes/index.js');
 app.use('/', routes);
-app.use('/news', routes);
-app.use('/events', routes);
-app.use('/donate', routes);
-app.use('/register', routes);
-app.use('/family', routes);
+app.use('/members', routes);
+app.use('/recent', routes);
+app.use('/unbelievable', routes);
+app.use('/zengthis', routes);
+app.use('/stp', routes);
 
 ////////////////////////////////////////////////
 // In Command Prompt (not Bash), including the ""

@@ -1,0 +1,66 @@
+<div class="parallax-container" id="tupPage">
+  <div class="container">
+    <div class="section">
+    </div>
+  </div>
+  <div class="parallax"><img src="./assets/images/tupBanner.jpg" alt="Unsplashed background img 1"></div>
+</div>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col s12 m9 l10">
+      <div class="row">
+        <div class="col s12">
+          <h1>The Unbelievable Podcast</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="episodes" class="container">
+          <div class="section no-pad-bot">
+            <br><br>
+            <div class="row center">
+            {{#each found}}
+              <div class="col s12 m7">
+                <div class="card horizontal">
+                  <div class="card-image">
+                    <img src="{{this.epThumb}}">
+                  </div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <p>{{this.epDescription}}</p><br>
+                      <p>{{this.date}}</p>
+                    </div>
+                    <div class="card-action">
+                      <!-- need to have player structure setup -->
+                      <a href="{{this.epMediaAudio}}"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {{/each}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col hide-on-small-only m3 l2">
+      <div class="pin-top" style="top: 0px;"><!-- toggles to pinned on scroll height -->
+        <a id="logo-container" href="{{this.showUrl}}" class="brand-logo"><i class="material-icons">{{this.showThumb}}</i></a>
+        <ul id="showInfo">
+          <li id="subscribe">{{this.subscribe}}</li>
+          <li id="patreon">{{this.patreon}}</li>
+        </ul>
+        <ul id="showsMenu">
+          <li class="menuItem">The Unbelievable Podcast</li>
+          <li class="menuItem">Zeng This!</li>
+          <li class="menuItem">Secret Transmission Podcast</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+

@@ -49,6 +49,10 @@ var ShowSchema = new Schema({
     type: String,
     required: false
   },
+  order: {
+    type: String,
+    required: true
+  },
   date: {
     type: Date,
     default: Date.now
