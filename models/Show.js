@@ -64,3 +64,20 @@ var Show = mongoose.model("Show", ShowSchema);
 
 // Export the model
 module.exports = Show;
+
+/*
+  title
+  showUrl
+  showThumb
+  artist
+  subscribe
+  patreon
+  email
+  facebook
+  twitter
+  type
+  youtube
+  order
+  date
+*/
+  

@@ -13,6 +13,10 @@ var EpisodeSchema = new Schema({
     type: String,
     required: true
   },
+  epDownloadUrl: {
+    type: String,
+    required: false
+  },
   epThumb: {
     type: String,
     required: false
@@ -40,3 +44,13 @@ var Episode = mongoose.model("Episode", EpisodeSchema);
 
 // Export the model
 module.exports = Episode;
+
+
+  title
+  epMediaAudio
+  epDownloadUrl
+  epThumb
+  epSource
+  epDescription
+  localUrl
+  date
