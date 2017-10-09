@@ -6,12 +6,13 @@ var path = require('path');
 var exphbs = require('express-handlebars');
 var logger = require("morgan");
 var mongoose = require("mongoose");
-var Article = require("./models/Article.js");
+var Episode = require("./models/Episode.js");
+var Show = require("./models/Show.js");
 var request = require("request");
 var cheerio = require("cheerio");
 var Promise = require("bluebird");
 var app = express();
-var PORT = process.env.PORT || 3030;
+var PORT = process.env.PORT || 3000;
 
 mongoose.Promise = Promise;
 

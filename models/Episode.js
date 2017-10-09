@@ -45,7 +45,7 @@ var Episode = mongoose.model("Episode", EpisodeSchema);
 // Export the model
 module.exports = Episode;
 
-
+/*
   title
   epMediaAudio
   epDownloadUrl
@@ -54,3 +54,4 @@ module.exports = Episode;
   epDescription
   localUrl
   date
+*/

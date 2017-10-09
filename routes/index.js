@@ -16,7 +16,7 @@ var search = require("../public/collectContent.js");
 ////////
 // changed articleSearch to showSearch
 router.get("/", function(req,res) {
-  search.contentSearch();
+//  search.contentSearch();
   res.render("index", {layout: 'main.handlebars'});
 });
 

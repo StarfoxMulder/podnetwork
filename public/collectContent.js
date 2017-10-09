@@ -62,6 +62,7 @@ exports.contentSearch = function() {
     });
   }); 
 
+/*
   ////// Other Show X
   request("https://www.spreaker.com/user/unbelievable", function(error, response, html) {
 
@@ -78,7 +79,7 @@ exports.contentSearch = function() {
       result.source = tup;
       result.scrapeDate = Date.now();
 
-      var entry = new Article(result);
+      var entry = new Episode(result);
 
       entry.save(function(err, doc) {
 
@@ -89,7 +90,7 @@ exports.contentSearch = function() {
       });
     });
   }); 
-
+*/
 
 // Zeng This!
 ///// http://zengthis.podbean.com/
