@@ -51,7 +51,7 @@ exports.contentSearch = function() {
     result.source = tup;
     result.scrapeDate = Date.now();
 
-    var entry = new Article(result);
+    var entry = new Episode(result);
 
     entry.save(function(err, doc) {
 

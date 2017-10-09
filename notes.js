@@ -22,3 +22,9 @@
 ///// https://thoseconspiracyguys.com/
 // Emergency Exit Podcast
 ///// https://www.emergencyexitpodcast.com/
+
+
+
+/////////////
+// API for pod info vs scraping
+// 
