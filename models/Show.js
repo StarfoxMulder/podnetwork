@@ -56,6 +56,10 @@ var ShowSchema = new Schema({
   date: {
     type: Date,
     default: Date.now
+  },
+  episode: {
+    type: Schema.Types.ObjectId,
+    ref:"Episode"
   }
 });
 
