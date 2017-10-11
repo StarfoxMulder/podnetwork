@@ -8,7 +8,7 @@ var logger = require("morgan");
 var Promise = require("bluebird");
 var request = require("request");
 var cheerio = require("cheerio");
-var search = require("../public/collectContent.js");
+var search = require("../public/collectContentAPI.js");
 
 /////  Routes  \\\\\
 /////  ======  \\\\\
@@ -16,8 +16,8 @@ var search = require("../public/collectContent.js");
 ////////
 // changed articleSearch to showSearch
 router.get("/", function(req,res) {
-//  search.contentSearch();
   res.render("index", {layout: 'main.handlebars'});
+ // setTimeout(search.contentSearch, 2000);
 });
 
 router.get("/members", function(req,res) {

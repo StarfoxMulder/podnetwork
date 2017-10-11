@@ -45,11 +45,11 @@ exports.contentSearch = function() {
 
     result.title = $(".ly_section_body h2 a").text();
     /////// below has not been adjusted for Spreaker -- going to take out Fox
-    result.link = $(".ly_section_body").children("a").attr("href");
-    result.image = $(".ly_section_body").children("a").children("div").children("img").attr("src");
-    result.snip = $(".ly_section_body").children("a").attr("title")
-    result.source = tup;
-    result.scrapeDate = Date.now();
+    result.epMediaAudio = $(".ly_section_body").children("a").attr("href");
+    result.epThumb = $(".ly_section_body").children("a").children("div").children("img").attr("src");
+    result.epDescription = $(".ly_section_body").children("a").attr("title")
+    result.epSource = tup;
+    result.date = $("#ext-gen15").text();
 
     var entry = new Episode(result);
 
