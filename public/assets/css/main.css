@@ -12,6 +12,9 @@ main {
   font-size: 28px;
   width: auto;
 }
+#logo-container i{
+  font-size: 44px !important;
+}
 nav {
   font-family: 'Spinnaker', sans-serif;
   z-index: 2;
@@ -25,7 +28,7 @@ nav ul a {
 nav a {
   vertical-align: middle !important;
   color: #1a237e !important;
-  font-size: 20px;
+  font-size: 20px !important;
 }
 .hide-on-med-and-down {
   font-size: 22px !important;
@@ -111,6 +114,10 @@ footer .row {
 }
 .card-content p:nth-of-type(2) {
   font-size: 18px;
+}
+.card .card-image img {
+  width: 225px;
+  height: 225px;
 }
 
 @media only screen and (max-width : 992px) {
