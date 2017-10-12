@@ -1,5 +1,7 @@
 /*/// Main Layout ///*/
-
+body{
+  height: 100%;
+}
 main {
   padding-top: 3%;
 }
@@ -39,13 +41,9 @@ h1 {
   font-family: 'Spinnaker', sans-serif;
   font-weight: 900;
 }
-h4, h5{
-  font-family: 'Spinnaker', sans-serif !important;
-}
-h6 {
-  font-family: 'Spinnaker', sans-serif !important;
-  font-size: 20px;
-  line-height: 2rem;
+#tagline {
+  text-align: right;
+  padding-bottom: 7px;
 }
 label {
   font-family: 'Spinnaker', sans-serif;
@@ -62,13 +60,14 @@ label {
   width: 100%;
 }
 
-footer .md-18 {
-  font-size: 16px;
+#cr {
+  font-size: 14px;
 }
 footer p {
-  line-height: 2rem;
   font-family: 'Spinnaker', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
+  padding-bottom: 15px;
+  text-align: right;
 }
 
 .icon-block {
@@ -78,20 +77,8 @@ footer p {
   font-size: inherit;
 }
 
-footer.page-footer {
-  margin: 0;
-}
-
-.footer-copyright {
-  height: 5px !important;
-  max-height: 5px !important;
-  min-height: 5px !important;
-}
-.footer-copyright .container {
-  height: 5px !important;
-}
-footer .row {
-  margin-bottom: 0%;
+footer {
+  bottom: 0;
 }
 
 .socialIcon {
