@@ -4,10 +4,11 @@ body{
 }
 main {
   height: 100%;
+  background-color: #89BDCC;
 }
 #brandTitle {
   font-family: 'Spinnaker', sans-serif;
-  color: #303f9f;
+  color: #0A657F;
   letter-spacing: 7px;
   margin-left: 5%;
   margin-right: 5%;
@@ -22,14 +23,14 @@ nav {
   z-index: 2;
 }
 nav .brand-logo {
-  color: #303f9f;
+  color: #0A657F;
 }
 nav ul a {
-  color: #303f9f;
+  color: #0A657F;
 }
 nav a {
   vertical-align: middle !important;
-  color: #303f9f !important;
+  color: #0A657F !important;
   font-size: 20px !important;
 }
 .hide-on-med-and-down {
@@ -79,6 +80,10 @@ footer p {
 
 footer {
   bottom: 0;
+  background-color: #0A657F !important;
+}
+footer .page-footer {
+  background-color: #0A657F !important;
 }
 
 .socialIcon {
@@ -88,7 +93,9 @@ footer {
 /*/// index.handlebars ///*/
 
 #index-banner {
+  background-color: #0A657F;
   color: #fff;
+  border-bottom-color: #55767F;
 }
 #index-banner header {
   margin-top: 10px;
@@ -99,10 +106,25 @@ footer {
   font-size: 20px;
   font-weight: 700;
 }
+.card:hover {
+ transform: scale(1.01);
+}
 .card-content p:nth-of-type(2) {
   font-size: 18px;
+  font-weight: 500;
+}
+.card-action a {
+  color: #55767F !important;
+  font-weight: 500;
 }
 .card .card-image{
+  height: 220px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: center;
+}
+#ci1{
   height: 220px;
   background-repeat: no-repeat;
   background-position: center;

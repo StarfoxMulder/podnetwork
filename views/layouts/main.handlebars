@@ -13,7 +13,15 @@
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <script src="init.js"></script>
-    <script src="app.js"></script>
+  <!--  <script src="app.js"></script> -->
+    <script>
+      $(document).ready(function(){
+        $(".dropdown-button").dropdown({
+              hover: true,
+              beloworigin: true
+          });
+      });
+    </script>
   </head>
   <body>
     <ul id="dropdown1" class="dropdown-content">
@@ -22,17 +30,28 @@
       <li><a href="/stp">Secret Transmission Podcast</a></li>
     </ul>
     <nav class="white" role="navigation">
-      <div class="nav-wrapper container indigo-text darken-3">
+      <div class="nav-wrapper container">
         <a id="logo-container" href="/" class="brand-logo"><i class="material-icons">all_inclusive</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a class="dropdown-button" data-activates="dropdown1">Members<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-button" data-activates="dropdown1" data-hover="true" data-beloworigin="true">Members<i class="material-icons right">arrow_drop_down</i></a>
+          </li>
           <li><a href="/recent">Recent</a></li>
           <li><a href="/">Home</a></li>
+        </ul>
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="/unbelievable">Unbelievable Podcast</a></li>
+          <li><a href="/zengthis">Zeng This!</a></li>
+          <li><a href="/stp">Secret Transmission Podcast</a></li>
+        </ul>
+        <ul id="dropdown1b" class="dropdown-content">
+          <li><a href="/unbelievable">Unbelievable Podcast</a></li>
+          <li><a href="/zengthis">Zeng This!</a></li>
+          <li><a href="/stp">Secret Transmission Podcast</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
           <!-- <li><a href="/members">Members</a></li> -->
-          <li><a class="dropdown-button" data-activates="dropdown1">Members<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-button" data-activates="dropdown1b" data-hover="true" data-beloworigin="true">Members<i class="material-icons right">arrow_drop_down</i></a></li>
           <li><a href="/recent">Recent</a></li>
           <li><a href="/">Home</a></li>
         </ul>
@@ -44,7 +63,7 @@
     {{{ body }}}
 
     </main>
-    <footer class="page-footer  indigo darken-3">
+    <footer class="page-footer">
       <div class="container">
         <div class="row">
           <p class="white-text">Dope Shows Copyright <i class="material-icons small" id="cr">copyright</i> 2017</p>
