@@ -3,7 +3,7 @@ body{
   height: 100%;
 }
 main {
-  padding-top: 3%;
+  height: 100%;
 }
 #brandTitle {
   font-family: 'Spinnaker', sans-serif;
@@ -102,9 +102,12 @@ footer {
 .card-content p:nth-of-type(2) {
   font-size: 18px;
 }
-.card .card-image img {
-  width: 225px;
-  height: 225px;
+.card .card-image{
+  height: 220px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: center;
 }
 
 @media only screen and (max-width : 992px) {
