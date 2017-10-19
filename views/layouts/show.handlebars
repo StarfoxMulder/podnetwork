@@ -10,19 +10,44 @@
     <link rel="stylesheet" href="/assets/css/main.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Junction|Spinnaker" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="init.js"></script>
+  <!--  <script src="app.js"></script> -->
+    <script>
+      $(document).ready(function(){
+        $(".dropdown-button").dropdown({
+              hover: true,
+              beloworigin: true
+          });
+        
+      });
+    </script>
   </head>
   <body>
     <nav class="white" role="navigation">
       <div class="nav-wrapper container indigo-text darken-4">
         <a id="logo-container" href="/" class="brand-logo"><i class="material-icons">all_inclusive</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="/members">Members</a></li>
+          <li><a class="dropdown-button" data-activates="dropdown1" data-hover="true" data-beloworigin="true">Members<i class="material-icons right">arrow_drop_down</i></a>
+          </li>
           <li><a href="/recent">Recent</a></li>
           <li><a href="/">Home</a></li>
         </ul>
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="/unbelievable">Unbelievable Podcast</a></li>
+          <li><a href="/zengthis">Zeng This!</a></li>
+          <li><a href="/stp">Secret Transmission Podcast</a></li>
+        </ul>
+        <ul id="dropdown1b" class="dropdown-content">
+          <li><a href="/unbelievable">Unbelievable Podcast</a></li>
+          <li><a href="/zengthis">Zeng This!</a></li>
+          <li><a href="/stp">Secret Transmission Podcast</a></li>
+        </ul>
 
         <ul id="nav-mobile" class="side-nav">
-          <li><a href="/members">Members</a></li>
+          <!-- <li><a href="/members">Members</a></li> -->
+          <li><a class="dropdown-button" data-activates="dropdown1b" data-hover="true" data-beloworigin="true">Members<i class="material-icons right">arrow_drop_down</i></a></li>
           <li><a href="/recent">Recent</a></li>
           <li><a href="/">Home</a></li>
         </ul>
@@ -32,43 +57,29 @@
 
 <!-- WAAAIT a second - in order to populate the show's patreon, links, etc this should be included on the individual show pages  -->
     <main>
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m9 l10">
-    {{{ body }}}
-          </div>
-          <div class="col hide-on-small-only m3 l2">
-            <div class="pin-top" style="top: 0px;"><!-- toggles to pinned on scroll height -->
-              <a id="logo-container" href="/" class="brand-logo"><i class="material-icons">all_inclusive</i></a>
-              <ul id="showsMenu">
-                <li class="menuItem">The Unbelievable Podcast</li>
-                <li class="menuItem">The Unbelievable Podcast</li>
-                <li class="menuItem">The Unbelievable Podcast</li>
-              </ul>
-            </div>
+      <div class="row">
+        <div class="col s12 m10">
+  {{{ body }}}
+        </div>
+        <div id="sideNav" class="col hide-on-small-only m2">
+          <div class="pin-top" style="top: 0px;"><!-- toggles to pinned on scroll height -->
+            <ul id="sideShows">
+              <li><a href="/unbelievable">Unbelievable Podcast</a></li>
+              <li><a href="/zengthis">Zeng This!</a></li>
+              <li><a href="/stp">Secret Transmission Podcast</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </main>
 
-    <footer class="page-footer  indigo darken-4">
+    <footer class="page-footer">
       <div class="container">
         <div class="row">
-          <div class="col l4 s12">
-            <h5 class="white-text left-align">Dope Shows</h5>
-            <h6 class="left-align grey-text text-lighten-4">Copyright <i class="material-icons md-18">copyright</i> 2017</h6>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright  indigo darken-4">
-        <div class="container">
+          <p class="white-text">Dope Shows Copyright <i class="material-icons small" id="cr">copyright</i> 2017</p>
         </div>
       </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-    <script src="init.js"></script>
-    <script src="app.js"></script>
   </body>
 </html>

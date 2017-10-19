@@ -1,10 +1,12 @@
 /*/// Main Layout ///*/
 body{
-  height: 100%;
 }
 main {
-  height: 100%;
+  min-height: 930px;
   background-color: #89BDCC;
+}
+main .row {
+  margin-bottom: 0 !important;
 }
 #brandTitle {
   font-family: 'Spinnaker', sans-serif;
@@ -88,6 +90,32 @@ footer .page-footer {
 
 .socialIcon {
   max-height: 22px;
+}
+
+/*/// Show Layout CSS ///*/
+#sideNav {
+  background-color: #0A657F;
+  color: #fff;
+  padding-right: 0 !important;
+  height: 930px;
+}
+#sideShows li a{
+  list-style-type: none;
+  height: 2rem;
+  line-height: 2rem;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500px;
+  color: #ABECFF;
+  padding-top: 48px;
+}
+#sideShows li:hover a{
+  height: 5%;
+  font-size: 20px;
+  font-weight: 500px;
+  color: #0A657F;
+  background-color: #5EDBFF;
+
 }
 
 /*/// index.handlebars ///*/
