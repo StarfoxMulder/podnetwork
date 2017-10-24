@@ -28,3 +28,9 @@
 /////////////
 // API for pod info vs scraping
 // 
+
+
+
+
+///// Color Schemes:
+//  https://color.adobe.com/sea-colors-color-theme-10072320/?showPublished=true

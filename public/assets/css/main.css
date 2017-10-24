@@ -130,9 +130,16 @@ footer .page-footer {
   text-align: left;
   margin-bottom: 0px;
 }
+.homeMain {
+  padding-top: 5rem  !important;
+}
 .showName {
   font-size: 20px;
   font-weight: 700;
+}
+.card-content {
+  min-height: 200px;
+  max-height: 200px;
 }
 .card:hover {
  transform: scale(1.01);
